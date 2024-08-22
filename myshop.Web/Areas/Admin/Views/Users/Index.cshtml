@@ -1,0 +1,59 @@
+﻿@model IEnumerable<ApplicationUser>
+
+@{
+    ViewBag.PageTitle = "Users Managment";
+    ViewBag.Title = "Users List";
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+    ViewBag.PageHeader = "Users";
+    ViewBag.CardTitle = "Users";
+
+}
+
+
+<div style="padding-bottom: 20px;">
+    <a href="/Identity/Account/Register" class="btn btn-primary" >Create New User</a>
+
+</div>
+<div>
+
+
+<table class="table table-hover">
+    <tr>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Phone Number</td>
+        <td>Actions</td>
+
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.PhoneNumber</td>
+            <td>
+                @if(item.LockoutEnd==null || item.LockoutEnd<DateTime.Now)
+                {
+                        <a class="btn btn-success" asp-action="LockUnlock" asp-route-id="@item.Id" >
+                            <i class="fas fa-lock-open"></i>
+                        </a>
+
+                }else
+                {
+                        <a class="btn btn-danger" asp-action="LockUnlock" asp-route-id="@item.Id">
+                        <i class="fas fa-lock"></i>
+                    </a>
+                }
+               
+            </td>
+            
+
+        </tr>
+    }
+</table>
+</div>
+
+@section Scripts{
+    <partial name="_Toaster">
+
+}

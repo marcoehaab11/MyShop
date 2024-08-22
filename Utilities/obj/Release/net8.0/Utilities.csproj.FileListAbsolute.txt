@@ -1,0 +1,12 @@
+D:\.Net\Projects\MyShop\Utilities\bin\Release\net8.0\Utilities.deps.json
+D:\.Net\Projects\MyShop\Utilities\bin\Release\net8.0\Utilities.dll
+D:\.Net\Projects\MyShop\Utilities\bin\Release\net8.0\Utilities.pdb
+D:\.Net\Projects\MyShop\Utilities\obj\Release\net8.0\Utilities.csproj.AssemblyReference.cache
+D:\.Net\Projects\MyShop\Utilities\obj\Release\net8.0\Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net\Projects\MyShop\Utilities\obj\Release\net8.0\Utilities.AssemblyInfoInputs.cache
+D:\.Net\Projects\MyShop\Utilities\obj\Release\net8.0\Utilities.AssemblyInfo.cs
+D:\.Net\Projects\MyShop\Utilities\obj\Release\net8.0\Utilities.csproj.CoreCompileInputs.cache
+D:\.Net\Projects\MyShop\Utilities\obj\Release\net8.0\Utilities.dll
+D:\.Net\Projects\MyShop\Utilities\obj\Release\net8.0\refint\Utilities.dll
+D:\.Net\Projects\MyShop\Utilities\obj\Release\net8.0\Utilities.pdb
+D:\.Net\Projects\MyShop\Utilities\obj\Release\net8.0\ref\Utilities.dll

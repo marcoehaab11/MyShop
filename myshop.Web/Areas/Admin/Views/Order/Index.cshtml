@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewBag.PageTitle = "Orders Managment";
+    ViewBag.Title = "View Orders";
+    Layout = "~/Views/Shared/_Dashboard.cshtml";
+
+    ViewBag.PageHeader = "Orders";
+    ViewBag.CardTitle = "Orders";
+}
+
+
+<table class="table table-hover" id="productsTable">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Phone Number</td>
+            <td>Emial</td>
+            <td>Address</td>
+            <td>Order Date</td>
+            <td>Shipping Date</td>
+            <td>TotalPrice</td>
+            <td>Actions</td>
+
+        </tr>
+    </thead>
+</table>
+<partial name="_Toaster">
+    @section Scripts {
+
+
+        <script src="~/js/order.js"></script>
+
+    }
+
